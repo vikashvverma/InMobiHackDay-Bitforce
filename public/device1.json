@@ -1,0 +1,34 @@
+{
+  "name": "Server",
+  "username": "vikash",
+  "ip": "10.14.120.248",
+  "type": "Server",
+  "icon": "server.png",
+  "children": [{
+    "icon": "eco123.jpg",
+    "name": "device1",
+    "type": "Device",
+    "username": "nitish",
+    "ip": "10.14.121.5",
+    "children": [{
+      "icon": "cplus.png",
+      "name": "c",
+      "type": "service"
+    }]
+  }, {
+    "icon": "eco123.jpg",
+    "name": "device2",
+    "type": "Device",
+    "username": "root",
+    "ip": "10.14.121.22",
+    "children": [{
+      "icon": "python.png",
+      "name": "python",
+      "type": "service"
+    }, {
+      "icon": "java.png",
+      "name": "java",
+      "type": "service"
+    }]
+  }]
+}

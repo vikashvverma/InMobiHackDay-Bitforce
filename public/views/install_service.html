@@ -1,0 +1,26 @@
+<md-dialog aria-label="Install Service">
+  <form name="serviceForm" novalidate>
+  <md-dialog-content class="sticky-container">
+    <md-subheader class="md-sticky-no-effect">Install a Service</md-subheader>
+    <h2>{{data}}</h2>
+    <md-radio-group ng-model="service">
+      <md-radio-button value="cplus" class="md-primary">C/C++</md-radio-button>
+      <md-radio-button value="python">Python</md-radio-button></md-radio-button>
+      <md-radio-button value="java">Java</md-radio-button>
+    </md-radio-group>
+    <md-input-container>
+      <label>password</label>
+      <input ng-model="password" type="password">
+    </md-input-container>
+  </md-dialog-content>
+  <div class="md-actions" layout="row">
+    <span flex></span>
+    <md-button ng-click="answer()" class="md-primary">
+     Cancel
+    </md-button>
+    <md-button ng-click="answer(service,password)" class="md-primary">
+      Install
+    </md-button>
+  </div>
+  </form>
+</md-dialog>

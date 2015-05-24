@@ -1,0 +1,25 @@
+<md-dialog aria-label="Install Service">
+  <form name="serviceForm" novalidate>
+  <md-dialog-content class="sticky-container">
+    <md-subheader class="md-sticky-no-effect">Enter Credentials</md-subheader>
+    <!-- <h2>{{data}}</h2> -->
+    <md-input-container>
+      <label>Username</label>
+      <input ng-model="username" type="text">
+    </md-input-container>
+    <md-input-container>
+      <label>password</label>
+      <input ng-model="password" type="password">
+    </md-input-container>
+  </md-dialog-content>
+  <div class="md-actions" layout="row">
+    <span flex></span>
+    <md-button ng-click="answer()" class="md-primary">
+     Cancel
+    </md-button>
+    <md-button ng-click="answer(username,password)" class="md-primary">
+      Show
+    </md-button>
+  </div>
+  </form>
+</md-dialog>

@@ -1,6 +1,8 @@
 # Logs
 logs
 *.log
+# tars
+*.tar
 
 # Runtime data
 pids

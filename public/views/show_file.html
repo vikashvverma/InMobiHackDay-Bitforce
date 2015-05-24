@@ -1,0 +1,20 @@
+<md-dialog aria-label="Install Service">
+  <form name="serviceForm" novalidate>
+  <md-dialog-content class="sticky-container">
+    <md-subheader class="md-sticky-no-effect">Upload Source Code</md-subheader>
+    <!-- <h2>{{data}}</h2> -->
+    <md-input-container>
+      <input ng-model="file" type="file" aria-label="Upload Source File" accept=".c,.cpp,.java,.py" onchange="angular.element(this).scope().file_changed(this)">
+    </md-input-container>
+  </md-dialog-content>
+  <div class="md-actions" layout="row">
+    <span flex></span>
+    <md-button ng-click="answer()" class="md-primary">
+     Cancel
+    </md-button>
+    <md-button ng-click="answer(file,serviceForm)" class="md-primary">
+      Show
+    </md-button>
+  </div>
+  </form>
+</md-dialog>
