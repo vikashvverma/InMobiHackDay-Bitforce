@@ -395,7 +395,7 @@ d3DemoApp.directive('forceCollapisble', function($document, $window) {
       var button1 = document.createElement('a');
       button1.setAttribute("href", "javascript:void(0);");
       button1.setAttribute("class", "zoomPanDefault");
-          	*/
+          	
       var parentDiv = document.createElement('div');
       parentDiv.setAttribute("class", "overLay");
       //parentDiv.setAttribute("id", "panzoom");
